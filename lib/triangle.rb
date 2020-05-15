@@ -9,7 +9,9 @@ class Triangle
   end 
   
   def kind 
-    if 
+    if @side1 <= 0 || @side2 <= 0 || @side3 <= 0 
+      raise TriangeError 
+      elsif @side1 + @side2 <= @side3 ||
     
   class TriangeError < StandardError 
     "This is not a valid triangle!"
